@@ -3,10 +3,10 @@ import GoogleMaps
 import SnapKit
 
 final class HomeViewController: UIViewController {
-
     
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
+    private let googleMapsService = GoogleMapsService()
     
     var mapView = GMSMapView()
     
@@ -17,6 +17,7 @@ final class HomeViewController: UIViewController {
     private lazy var plusZoom: UIButton = {
         let plusZoom = UIButton()
         plusZoom.setBackgroundImage(UIImage(named: "Plus"), for: .normal)
+        plusZoom.addTarget(self, action: #selector(plusZoomDidTap), for: .touchUpInside)
         
         return plusZoom
     }()
@@ -24,6 +25,7 @@ final class HomeViewController: UIViewController {
     private lazy var minusZoom: UIButton = {
         let minusZoom = UIButton()
         minusZoom.setBackgroundImage(UIImage(named: "Minus"), for: .normal)
+        minusZoom.addTarget(self, action: #selector(minusZoomDidTap), for: .touchUpInside)
         
         return minusZoom
     }()
@@ -32,6 +34,7 @@ final class HomeViewController: UIViewController {
         let myLocation = UIButton()
         myLocation.setBackgroundImage(UIImage(named: "myLocation"), for: .normal)
         myLocation.addTarget(self, action: #selector(showMyLocation), for: .touchUpInside)
+        mapView.isMyLocationEnabled = true
         
         return myLocation
     }()
@@ -149,7 +152,18 @@ final class HomeViewController: UIViewController {
     }
     
     @objc func showMyLocation() {
-        print("my location")
+        let camera = googleMapsService.getMyCameraPosition(mapView: mapView)
+        mapView.animate(to: camera)
+    }
+    
+    @objc func plusZoomDidTap() {
+        let zoomInValue = googleMapsService.getZoomInValue(mapView: mapView)
+        mapView.animate(toZoom: zoomInValue)
+    }
+    
+    @objc func minusZoomDidTap() {
+        let zoomOutValue = googleMapsService.getZoomOutValue(mapView: mapView)
+        mapView.animate(toZoom: zoomOutValue)
     }
 }
 

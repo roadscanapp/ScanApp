@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 extension UIImage{
     class func getSegRect(color: CGColor, andSize size: CGSize) -> UIImage{
         UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
