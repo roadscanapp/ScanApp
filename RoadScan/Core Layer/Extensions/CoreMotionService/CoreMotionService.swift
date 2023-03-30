@@ -11,6 +11,9 @@ struct CoreMotionViewModel {
     var xPosition: Double
     var yPosition: Double
     var zPosition: Double
+    let motionManager = CMMotionManager()
+    var lastUpdateTime: TimeInterval = 0
+    var velocity: Double = 0
 }
 
 protocol CoreMotionServiceDelegate: AnyObject {

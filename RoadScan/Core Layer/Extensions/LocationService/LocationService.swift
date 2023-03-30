@@ -35,13 +35,25 @@ extension LocationService: CLLocationManagerDelegate {
         locationManager.stopMonitoringSignificantLocationChanges()
         let locationValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("locations = \(locationValue)")
+                
+        
+        guard let lastLocation = locations.last else { return }
+        guard let previousLocation = locations.dropLast().last else { return }
+        
+        let distance = lastLocation.distance(from: previousLocation)
+        let timeInterval = lastLocation.timestamp.timeIntervalSince(previousLocation.timestamp)
+        
+        var velocity = ( (distance / timeInterval) * 3,6 )
+//        print("Velocity - :\(velocity) km/h")
         
         delegate?.getCurrentLocation(with: .init(lat: locationValue.latitude, lon: locationValue.longitude))
         
         locationManager.stopUpdatingLocation()
+
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(#function)
     }
+
 }
