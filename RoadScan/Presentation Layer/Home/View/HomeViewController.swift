@@ -4,7 +4,8 @@ import SnapKit
 
 final class HomeViewController: UIViewController {
 
-    
+    var centerMarker: GMSMarker?
+    let array = ["redCircle", "brownCircle", "greenCircle"]
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
     
@@ -106,7 +107,39 @@ final class HomeViewController: UIViewController {
     
     // нужно удалить метод или обьекти если не юзается
     private func setUpGoogleMaps(){
-        
+        addMarker(to: mapView, at: 43.238949, and: 76.945451, with: "Republic Square")
+        addMarker(to: mapView, at: 43.222278, and: 76.947694, with: "Koktobe Hill")
+        addMarker(to: mapView, at: 43.256942, and: 76.943367, with: "Zenkov Cathedral")
+        addMarker(to: mapView, at: 43.175478, and: 77.049082, with: "Medeu Skating Rink")
+        var coordinates = [CLLocationCoordinate2D]()
+
+        coordinates.append(CLLocationCoordinate2D(latitude: 43.238949, longitude: 76.945451))
+        coordinates.append(CLLocationCoordinate2D(latitude: 43.222278, longitude: 76.947694))
+        coordinates.append(CLLocationCoordinate2D(latitude: 43.256942, longitude: 76.943367))
+        coordinates.append(CLLocationCoordinate2D(latitude: 43.175478, longitude: 77.049082))
+
+        let path = GMSMutablePath()
+        for coordinate in coordinates {
+            path.add(coordinate)
+        }
+
+        let polyline = createPolyline(from: path, with: .blue, and: 5.0)
+        polyline.map = mapView
+    }
+    private func addMarker(to mapView: GMSMapView, at latitude: CLLocationDegrees, and longitude: CLLocationDegrees, with title: String) {
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        marker.title = title
+        let imageView = UIImageView(image: UIImage(named: array[Int.random(in: 0...2)]))
+                imageView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        marker.iconView = imageView
+        marker.map = mapView
+    }
+    private func createPolyline(from path: GMSMutablePath, with strokeColor: UIColor, and strokeWidth: CGFloat) -> GMSPolyline {
+        let polyline = GMSPolyline(path: path)
+        polyline.strokeColor = strokeColor
+        polyline.strokeWidth = strokeWidth
+        return polyline
     }
     // constraint не должны быть много чем 54
     private func makeConstraints() {
