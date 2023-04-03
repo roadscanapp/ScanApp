@@ -24,6 +24,8 @@
 		708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */; };
 		708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */; };
 		8A4A2775E3F4D4E9E84E9B92 /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
+		8AC45EEA29D5D0E100FBB38A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC45EE929D5D0E100FBB38A /* HomeViewModel.swift */; };
+		8AC45EED29D5D28000FBB38A /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC45EEC29D5D28000FBB38A /* HomeBuilder.swift */; };
 		D97A239029D1E1D800B8AB0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238429D1E1D800B8AB0A /* HomeViewController.swift */; };
 		D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */; };
 		D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238829D1E1D800B8AB0A /* EndFeedbackViewController.swift */; };
@@ -60,6 +62,8 @@
 		708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		77297612BDF42821D724C162 /* Pods-RoadScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.debug.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.debug.xcconfig"; sourceTree = "<group>"; };
+		8AC45EE929D5D0E100FBB38A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8AC45EEC29D5D28000FBB38A /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97A238429D1E1D800B8AB0A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +207,22 @@
 			path = VIewModels;
 			sourceTree = "<group>";
 		};
+		8AC45EE829D5D0C500FBB38A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AC45EE929D5D0E100FBB38A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8AC45EEB29D5D22B00FBB38A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8AC45EEC29D5D28000FBB38A /* HomeBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		B017D85B023F1876A9DD90C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +235,8 @@
 		D97A238229D1E1D800B8AB0A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8AC45EEB29D5D22B00FBB38A /* Builder */,
+				8AC45EE829D5D0C500FBB38A /* ViewModel */,
 				D97A238329D1E1D800B8AB0A /* View */,
 			);
 			path = Home;
@@ -487,6 +509,7 @@
 			files = (
 				D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */,
 				D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */,
+				8AC45EED29D5D28000FBB38A /* HomeBuilder.swift in Sources */,
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
@@ -504,6 +527,7 @@
 				7005AFA529A69ED400ABEB66 /* TypographyFonts.swift in Sources */,
 				D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */,
 				D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */,
+				8AC45EEA29D5D0E100FBB38A /* HomeViewModel.swift in Sources */,
 				7005AFB529AB3F2500ABEB66 /* Typography.swift in Sources */,
 				7005AFB729AB439000ABEB66 /* NSAttributedString.swift in Sources */,
 				708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */,
