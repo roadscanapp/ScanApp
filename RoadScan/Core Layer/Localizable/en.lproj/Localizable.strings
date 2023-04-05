@@ -1,5 +1,21 @@
+//MARK: - Onboarding
 "next" = "";
 "allow" = "";
 "firstOnboardingText" = "";
 "secondOnboardingText" = "";
 "thirdOnboardingText" = "";
+
+//MARK: - SegmentedControl
+"points" = "";
+"colorSchemes" = "";
+
+//MARK: - Settings
+"userMode" = "";
+"carType" = "";
+"changeCity" = "";
+"selectLanguage" = "";
+"feedBack" = "";
+
+//MARK: - Tab Bar
+"maps" = "";
+"settings" = "";

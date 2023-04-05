@@ -3,11 +3,11 @@ import UIKit
 //MARK: - UICollectionViewDataSource
 extension OnBoardingViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return sections.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return sections[section].rows.count
     }
 }
 
