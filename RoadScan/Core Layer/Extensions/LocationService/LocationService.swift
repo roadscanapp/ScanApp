@@ -43,7 +43,7 @@ extension LocationService: CLLocationManagerDelegate {
         let distance = lastLocation.distance(from: previousLocation)
         let timeInterval = lastLocation.timestamp.timeIntervalSince(previousLocation.timestamp)
         
-        var velocity = ( (distance / timeInterval) * 3,6 )
+        let velocity = ( (distance / timeInterval) * 3,6 )
 //        print("Velocity - :\(velocity) km/h")
         
         delegate?.getCurrentLocation(with: .init(lat: locationValue.latitude, lon: locationValue.longitude))

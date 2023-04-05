@@ -11,18 +11,24 @@ struct CoreMotionViewModel {
     var xPosition: Double
     var yPosition: Double
     var zPosition: Double
-    let motionManager = CMMotionManager()
-    var lastUpdateTime: TimeInterval = 0
-    var velocity: Double = 0
+}
+
+enum DetectableSpeed {
+    case carIsDriving
+    case carIsNotDriving
 }
 
 protocol CoreMotionServiceDelegate: AnyObject {
     func getCoordinateMotionDevice(with data: CoreMotionViewModel)
+    func getDetectableSpeedState(with state: DetectableSpeed)
 }
 
 final class CoreMotionService {
     let motionManager = CMMotionManager()
     let motionQueue = OperationQueue()
+    var lastUpdateTime: TimeInterval = 0
+    var velocity: Double = 0
+
     
     weak var delegate: CoreMotionServiceDelegate?
     
@@ -43,4 +49,29 @@ final class CoreMotionService {
                                                                  zPosition: motion.pitch))
         }
     }
+   
+    func speedDetecting() {
+        motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, error in
+                    guard let self = self, let motion = motion else { return }
+                    let currentTime = motion.timestamp
+                    
+                    if self.lastUpdateTime != 0 {
+                        let deltaTime = currentTime - self.lastUpdateTime
+                        let acceleration = motion.userAcceleration.z
+                        self.velocity = (acceleration * deltaTime)
+                        if(self.velocity > 20) {
+                            self.delegate?.getDetectableSpeedState(with: DetectableSpeed.carIsDriving)
+                        } else {
+                            self.delegate?.getDetectableSpeedState(with: DetectableSpeed.carIsNotDriving)
+                        }
+                    }
+                    
+                    self.lastUpdateTime = currentTime
+                }
+    }
+}
+
+protocol delegate
+{
+    
 }

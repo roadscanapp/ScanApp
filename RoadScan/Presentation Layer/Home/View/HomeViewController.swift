@@ -5,13 +5,9 @@ import CoreMotion
 
 
 final class HomeViewController: UIViewController {
-
-    
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
-    let motionManager = CMMotionManager()
-    var lastUpdateTime: TimeInterval = 0
-    var velocity: Double = 0
+    private let motionManager = CMMotionManager()
     
     var mapView = GMSMapView()
     
@@ -82,21 +78,7 @@ final class HomeViewController: UIViewController {
         
         self.view.addSubview(mapView)
         setup()
-        
-        motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, error in
-                    guard let self = self, let motion = motion else { return }
-                    let currentTime = motion.timestamp
-                    
-                    if self.lastUpdateTime != 0 {
-                        let deltaTime = currentTime - self.lastUpdateTime
-                        let acceleration = motion.userAcceleration.z
-                        self.velocity += (acceleration * deltaTime )
-        
-                        print("Velocity: \(self.velocity * 3.6) km/h")
-                    }
-                    
-                    self.lastUpdateTime = currentTime
-                }
+        coreMotionService.speedDetecting()
     }
     
     private func setup() {
@@ -174,6 +156,10 @@ final class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: CoreMotionServiceDelegate {
+    func getDetectableSpeedState(with state: DetectableSpeed) {
+        print(state)
+    }
+    
     func getCoordinateMotionDevice(with data: CoreMotionViewModel) {
         print("x ---------->", data.xPosition)
         print("y ---------->", data.yPosition)
