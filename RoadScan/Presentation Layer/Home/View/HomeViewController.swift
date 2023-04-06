@@ -157,7 +157,12 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: CoreMotionServiceDelegate {
     func getDetectableSpeedState(with state: DetectableSpeed) {
-        print(state)
+        if state == .carIsDriving {
+            print("тут кочка")
+        } else {
+            print("тут ne кочка")
+        }
+      
     }
     
     func getCoordinateMotionDevice(with data: CoreMotionViewModel) {

@@ -59,7 +59,7 @@ final class CoreMotionService {
                         let deltaTime = currentTime - self.lastUpdateTime
                         let acceleration = motion.userAcceleration.z
                         self.velocity = (acceleration * deltaTime)
-                        if(self.velocity > 20) {
+                        if(self.velocity > 0) && motion.userAcceleration.x > 1.5 {
                             self.delegate?.getDetectableSpeedState(with: DetectableSpeed.carIsDriving)
                         } else {
                             self.delegate?.getDetectableSpeedState(with: DetectableSpeed.carIsNotDriving)
@@ -71,7 +71,4 @@ final class CoreMotionService {
     }
 }
 
-protocol delegate
-{
-    
-}
+
