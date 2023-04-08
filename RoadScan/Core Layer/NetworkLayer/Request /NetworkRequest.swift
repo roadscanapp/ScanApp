@@ -6,7 +6,7 @@ protocol NetworkRequest {
 
 extension NetworkRequest {
     func request(endPoint: String, method: HttpMethods, parametrs: [String: Any]) {
-        
+        print("")
     }
 }
 
