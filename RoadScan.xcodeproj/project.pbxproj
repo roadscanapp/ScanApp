@@ -23,12 +23,13 @@
 		708E1A8B29981AC500164E9A /* OnBoardingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8A29981AC500164E9A /* OnBoardingViewController+Section.swift */; };
 		708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */; };
 		708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */; };
-		8A4A2775E3F4D4E9E84E9B92 /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
+		9488BE6C643A1EF13626E9BB /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
 		B9BE4DC529E18D5D009C2D02 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B9BE4DC429E18D5D009C2D02 /* Alamofire */; };
 		B9BE4DDC29E1A0EA009C2D02 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD629E1A0EA009C2D02 /* NetworkRequest.swift */; };
 		B9BE4DDD29E1A0EA009C2D02 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD729E1A0EA009C2D02 /* NetworkConstants.swift */; };
 		B9BE4DDE29E1A0EA009C2D02 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD929E1A0EA009C2D02 /* HTTPMethods.swift */; };
 		B9BE4DDF29E1A0EA009C2D02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DDB29E1A0EA009C2D02 /* NetworkService.swift */; };
+		B9BE4DE229E1A2FB009C2D02 /* HomeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DE129E1A2FB009C2D02 /* HomeViewModels.swift */; };
 		D97A239029D1E1D800B8AB0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238429D1E1D800B8AB0A /* HomeViewController.swift */; };
 		D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */; };
 		D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238829D1E1D800B8AB0A /* EndFeedbackViewController.swift */; };
@@ -42,8 +43,8 @@
 		D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A23A129D1E22600B8AB0A /* SegmentedControlExtension.swift */; };
 		D9A2C33A299E728B00B8AEA5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C339299E728B00B8AEA5 /* UIColor.swift */; };
 		D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C33C299E739000B8AEA5 /* OnboardingConstants.swift */; };
-		D9B99E4029DF0F0B006ABE05 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */; };
-		D9B99E4329DF0F30006ABE05 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */; };
+		D9B99E4029DF0F0B006ABE05 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E3F29DF0F0B006ABE05 /* HomeViewModel.swift */; };
+		D9B99E4329DF0F30006ABE05 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E4229DF0F30006ABE05 /* HomeBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		B9BE4DD729E1A0EA009C2D02 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		B9BE4DD929E1A0EA009C2D02 /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		B9BE4DDB29E1A0EA009C2D02 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B9BE4DE129E1A2FB009C2D02 /* HomeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModels.swift; sourceTree = "<group>"; };
 		D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97A238429D1E1D800B8AB0A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -89,8 +91,8 @@
 		D97A23A129D1E22600B8AB0A /* SegmentedControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlExtension.swift; sourceTree = "<group>"; };
 		D9A2C339299E728B00B8AEA5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D9A2C33C299E739000B8AEA5 /* OnboardingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstants.swift; sourceTree = "<group>"; };
-		D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
-		D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D9B99E3F29DF0F0B006ABE05 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D9B99E4229DF0F30006ABE05 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		E6F2D8671C48D8B681BD9D50 /* Pods-RoadScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.release.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +103,7 @@
 			files = (
 				B9BE4DC529E18D5D009C2D02 /* Alamofire in Frameworks */,
 				700EF6C7299D14DD00101B63 /* SnapKit in Frameworks */,
-				8A4A2775E3F4D4E9E84E9B92 /* Pods_RoadScan.framework in Frameworks */,
+				9488BE6C643A1EF13626E9BB /* Pods_RoadScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +279,19 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		B9BE4DE029E1A2F2009C2D02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE4DE129E1A2FB009C2D02 /* HomeViewModels.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D97A238229D1E1D800B8AB0A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D9B99E4129DF0F1A006ABE05 /* ViewModel */,
+				B9BE4DE029E1A2F2009C2D02 /* ViewModel */,
+				D9B99E4129DF0F1A006ABE05 /* HomeModel */,
 				D9B99E3E29DF0EF6006ABE05 /* Builder */,
 				D97A238329D1E1D800B8AB0A /* View */,
 			);
@@ -424,17 +435,17 @@
 		D9B99E3E29DF0EF6006ABE05 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */,
+				D9B99E4229DF0F30006ABE05 /* HomeBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		D9B99E4129DF0F1A006ABE05 /* ViewModel */ = {
+		D9B99E4129DF0F1A006ABE05 /* HomeModel */ = {
 			isa = PBXGroup;
 			children = (
-				D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */,
+				D9B99E3F29DF0F0B006ABE05 /* HomeViewModel.swift */,
 			);
-			path = ViewModel;
+			path = HomeModel;
 			sourceTree = "<group>";
 		};
 		EDB1CDC3485BDC061A01DAC2 /* Frameworks */ = {
@@ -576,7 +587,7 @@
 				D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */,
 				D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */,
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
-				D9B99E4329DF0F30006ABE05 /* HomeViewModel.swift in Sources */,
+				D9B99E4329DF0F30006ABE05 /* HomeBuilder.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
 				D97A23A029D1E20900B8AB0A /* CoreMotionService.swift in Sources */,
@@ -584,9 +595,10 @@
 				7019C63E299531D500E9379E /* AppDelegate.swift in Sources */,
 				D97A239429D1E1D800B8AB0A /* SettingsViewController.swift in Sources */,
 				D97A239D29D1E20900B8AB0A /* LocationService.swift in Sources */,
+				B9BE4DE229E1A2FB009C2D02 /* HomeViewModels.swift in Sources */,
 				708E1A8B29981AC500164E9A /* OnBoardingViewController+Section.swift in Sources */,
 				D97A239029D1E1D800B8AB0A /* HomeViewController.swift in Sources */,
-				D9B99E4029DF0F0B006ABE05 /* HomeBuilder.swift in Sources */,
+				D9B99E4029DF0F0B006ABE05 /* HomeViewModel.swift in Sources */,
 				700EF6CA299D19EF00101B63 /* UICollectionView.swift in Sources */,
 				7019C655299536AC00E9379E /* OnBoardingCollectionViewCell.swift in Sources */,
 				D9A2C33A299E728B00B8AEA5 /* UIColor.swift in Sources */,
@@ -678,7 +690,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -733,7 +745,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

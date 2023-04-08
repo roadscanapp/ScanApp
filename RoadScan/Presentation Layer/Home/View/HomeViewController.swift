@@ -9,6 +9,7 @@ final class HomeViewController: UIViewController {
     private let coreMotionService = CoreMotionService()
     private let motionManager = CMMotionManager()
     private let homeBuilder = HomeBuilder()
+    private let viewModel = HomeViewModel()
     
     var mapView = GMSMapView()
     
@@ -61,6 +62,7 @@ final class HomeViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        binding()
         locationService.delegate = self
     }
     
@@ -80,6 +82,7 @@ final class HomeViewController: UIViewController {
         self.view.addSubview(mapView)
         setup()
         coreMotionService.speedDetecting()
+        fetchDangerList()
     }
     
     private func setup() {
@@ -181,5 +184,22 @@ extension HomeViewController: LocationServiceProtocol {
                                               zoom:         15.0)
         
         mapView.animate(to: camera)
+    }
+}
+
+extension HomeViewController {
+    func binding() {
+        viewModel.delegate = self
+    }
+    
+    func fetchDangerList() {
+        viewModel.fetchDangerList(detail: .init(city: "Almaty", latitude: 123213, longitude: 123213, danger_level: "h"))
+    }
+}
+
+
+extension HomeViewController: OnUpdateDangerList {
+    func didUpdateDangerList() {
+        print("------------------------------>", viewModel.dangerList!)
     }
 }
