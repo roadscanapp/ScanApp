@@ -18,13 +18,13 @@ struct OnBoardingCollectionViewCellViewModel: OnBoardingCollectionViewCellViewMo
         var text = ""
         switch row {
         case .first:
-            text = RSConstants.firstOnboardingText
+            text = OnboardingConstants.firstOnboardingText
             return Typography.headlineFirst(text: text, color: .white, textAlignment: .center).styled
         case .second:
-            text = RSConstants.secondOnboardingText
+            text = OnboardingConstants.secondOnboardingText
             return Typography.headlineSecond(text: text, color: .white, textAlignment: .center).styled
         case .third:
-            text = RSConstants.thirdOnboardingText
+            text = OnboardingConstants.thirdOnboardingText
             return Typography.headlineSecond(text: text, color: .white, textAlignment: .center).styled
         }
     }
@@ -32,11 +32,11 @@ struct OnBoardingCollectionViewCellViewModel: OnBoardingCollectionViewCellViewMo
     var imageText: String {
         switch row {
         case .first:
-            return RSAssets.firstOnboardingImage
+            return RSASsets.firstOnboardingImage
         case .second:
-            return RSAssets.secondOnboardingImage
+            return RSASsets.secondOnboardingImage
         case .third:
-            return RSAssets.thirdOnboardingImage
+            return RSASsets.thirdOnboardingImage
         }
     }
     
@@ -44,9 +44,9 @@ struct OnBoardingCollectionViewCellViewModel: OnBoardingCollectionViewCellViewMo
         var text = ""
         switch row {
         case .first, .second:
-            text = RSConstants.nextButtonText
+            text = OnboardingConstants.nextButtonText
         case .third:
-            text = RSConstants.allowButtonText
+            text = OnboardingConstants.allowButtonText
         }
         
         return Typography.buttonMedium(text: text, color: .white).styled

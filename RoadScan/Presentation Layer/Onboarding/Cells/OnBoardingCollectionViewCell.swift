@@ -56,7 +56,7 @@ final class OnBoardingCollectionViewCell : UICollectionViewCell{
     }
     
     func setupViews() {
-        [imageView, textLabel, nextButton].forEach {
+        [imageView, textLabel, nextButton].forEach{
             contentView.addSubview($0)
         }
     }
