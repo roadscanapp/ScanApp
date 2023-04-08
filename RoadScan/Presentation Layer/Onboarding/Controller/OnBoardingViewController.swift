@@ -31,7 +31,7 @@ final class OnBoardingViewController: UIViewController{
     }
     
     func setupViews() {
-        [collectionView].forEach {
+        [collectionView].forEach{
             view.addSubview($0)
         }
     }

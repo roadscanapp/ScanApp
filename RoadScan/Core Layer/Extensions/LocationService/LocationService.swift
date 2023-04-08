@@ -17,15 +17,19 @@ protocol LocationServiceProtocol {
 }
 
 final class LocationService: NSObject {
-    var locationManager: CLLocationManager = CLLocationManager()
+    private var locationManager: CLLocationManager = CLLocationManager()
     
     var delegate: LocationServiceProtocol?
     
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+    }
+    
+    func requestLocation(rate : Double) {
+        locationManager.requestLocation()
     }
 }
 
@@ -34,14 +38,15 @@ extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopMonitoringSignificantLocationChanges()
         let locationValue:CLLocationCoordinate2D = manager.location!.coordinate
-        print("locations = \(locationValue)")
         
         delegate?.getCurrentLocation(with: .init(lat: locationValue.latitude, lon: locationValue.longitude))
         
         locationManager.stopUpdatingLocation()
+
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(#function)
     }
+
 }

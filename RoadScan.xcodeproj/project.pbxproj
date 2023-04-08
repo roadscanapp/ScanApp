@@ -20,19 +20,9 @@
 		7019C647299531D500E9379E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7019C646299531D500E9379E /* Assets.xcassets */; };
 		7019C64A299531D500E9379E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7019C648299531D500E9379E /* LaunchScreen.storyboard */; };
 		7019C655299536AC00E9379E /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019C654299536AC00E9379E /* OnBoardingCollectionViewCell.swift */; };
-		706F9AFE29D36B0E007647F7 /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F9AFD29D36B0E007647F7 /* GoogleMapsService.swift */; };
 		708E1A8B29981AC500164E9A /* OnBoardingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8A29981AC500164E9A /* OnBoardingViewController+Section.swift */; };
 		708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */; };
 		708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */; };
-		70A1F6B329D7426C002FDC29 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B229D7426C002FDC29 /* UIImage.swift */; };
-		70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */; };
-		70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B829D747EF002FDC29 /* UIView.swift */; };
-		70A1F6BC29D76319002FDC29 /* HomeViewController+CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */; };
-		70A1F6BE29D76359002FDC29 /* HomeViewController+LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */; };
-		70A1F6C029D810A2002FDC29 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BF29D810A2002FDC29 /* UITableView.swift */; };
-		70A1F6C329D8137E002FDC29 /* SettingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */; };
-		70A1F6C629D81766002FDC29 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */; };
-		70A1F6C829D81908002FDC29 /* SettingVIewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C729D81908002FDC29 /* SettingVIewController+TableView.swift */; };
 		8A4A2775E3F4D4E9E84E9B92 /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
 		B9BE4DBA29E18B84009C2D02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DB929E18B84009C2D02 /* NetworkService.swift */; };
 		B9BE4DBD29E18C04009C2D02 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DBC29E18C04009C2D02 /* HTTPMethods.swift */; };
@@ -51,9 +41,11 @@
 		D97A239E29D1E20900B8AB0A /* Stolzl-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D97A239929D1E20900B8AB0A /* Stolzl-Medium.ttf */; };
 		D97A239F29D1E20900B8AB0A /* Stolzl-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D97A239A29D1E20900B8AB0A /* Stolzl-Regular.ttf */; };
 		D97A23A029D1E20900B8AB0A /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A239C29D1E20900B8AB0A /* CoreMotionService.swift */; };
-		D97A23A229D1E22600B8AB0A /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A23A129D1E22600B8AB0A /* UISegmentedControl.swift */; };
+		D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A23A129D1E22600B8AB0A /* SegmentedControlExtension.swift */; };
 		D9A2C33A299E728B00B8AEA5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C339299E728B00B8AEA5 /* UIColor.swift */; };
-		D9A2C33D299E739000B8AEA5 /* RSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C33C299E739000B8AEA5 /* RSConstants.swift */; };
+		D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C33C299E739000B8AEA5 /* OnboardingConstants.swift */; };
+		D9B99E4029DF0F0B006ABE05 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */; };
+		D9B99E4329DF0F30006ABE05 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,19 +65,9 @@
 		7019C649299531D500E9379E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7019C64B299531D500E9379E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7019C654299536AC00E9379E /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
-		706F9AFD29D36B0E007647F7 /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsService.swift; sourceTree = "<group>"; };
 		708E1A8A29981AC500164E9A /* OnBoardingViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+Section.swift"; sourceTree = "<group>"; };
 		708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		70A1F6B229D7426C002FDC29 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
-		70A1F6B829D747EF002FDC29 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CoreMotionService.swift"; sourceTree = "<group>"; };
-		70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+LocationService.swift"; sourceTree = "<group>"; };
-		70A1F6BF29D810A2002FDC29 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
-		70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingViewController+Section.swift"; sourceTree = "<group>"; };
-		70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
-		70A1F6C729D81908002FDC29 /* SettingVIewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingVIewController+TableView.swift"; sourceTree = "<group>"; };
 		77297612BDF42821D724C162 /* Pods-RoadScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.debug.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.debug.xcconfig"; sourceTree = "<group>"; };
 		B9BE4DB929E18B84009C2D02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B9BE4DBC29E18C04009C2D02 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
@@ -104,9 +86,11 @@
 		D97A239929D1E20900B8AB0A /* Stolzl-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stolzl-Medium.ttf"; sourceTree = "<group>"; };
 		D97A239A29D1E20900B8AB0A /* Stolzl-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stolzl-Regular.ttf"; sourceTree = "<group>"; };
 		D97A239C29D1E20900B8AB0A /* CoreMotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionService.swift; sourceTree = "<group>"; };
-		D97A23A129D1E22600B8AB0A /* UISegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
+		D97A23A129D1E22600B8AB0A /* SegmentedControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlExtension.swift; sourceTree = "<group>"; };
 		D9A2C339299E728B00B8AEA5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		D9A2C33C299E739000B8AEA5 /* RSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSConstants.swift; sourceTree = "<group>"; };
+		D9A2C33C299E739000B8AEA5 /* OnboardingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstants.swift; sourceTree = "<group>"; };
+		D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E6F2D8671C48D8B681BD9D50 /* Pods-RoadScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.release.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,12 +128,9 @@
 		7005AFB829AB43B200ABEB66 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D97A23A129D1E22600B8AB0A /* UISegmentedControl.swift */,
+				D97A23A129D1E22600B8AB0A /* SegmentedControlExtension.swift */,
 				D9A2C339299E728B00B8AEA5 /* UIColor.swift */,
 				700EF6C9299D19EF00101B63 /* UICollectionView.swift */,
-				70A1F6B229D7426C002FDC29 /* UIImage.swift */,
-				70A1F6B829D747EF002FDC29 /* UIView.swift */,
-				70A1F6BF29D810A2002FDC29 /* UITableView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -166,6 +147,9 @@
 		700EF6C8299D19E300101B63 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D97A239B29D1E20900B8AB0A /* CoreMotionService */,
+				D97A239829D1E20900B8AB0A /* Fonts */,
+				D97A239629D1E20900B8AB0A /* LocationService */,
 				7005AFB929ABF15600ABEB66 /* Foundation */,
 				7005AFB829AB43B200ABEB66 /* UIKit */,
 				7005AFBA29AC92A600ABEB66 /* RSAssets.swift */,
@@ -202,14 +186,6 @@
 			path = RoadScan;
 			sourceTree = "<group>";
 		};
-		706F9AFC29D36AF8007647F7 /* GoogleMapsService */ = {
-			isa = PBXGroup;
-			children = (
-				706F9AFD29D36B0E007647F7 /* GoogleMapsService.swift */,
-			);
-			path = GoogleMapsService;
-			sourceTree = "<group>";
-		};
 		708E1A8E29981D0600164E9A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,34 +219,6 @@
 				708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */,
 			);
 			path = VIewModels;
-			sourceTree = "<group>";
-		};
-		70A1F6BA29D76302002FDC29 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D97A238429D1E1D800B8AB0A /* HomeViewController.swift */,
-				70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */,
-				70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		70A1F6C129D8136A002FDC29 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D97A238C29D1E1D800B8AB0A /* SettingsViewController.swift */,
-				70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */,
-				70A1F6C729D81908002FDC29 /* SettingVIewController+TableView.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		70A1F6C429D81759002FDC29 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B017D85B023F1876A9DD90C9 /* Pods */ = {
@@ -336,9 +284,8 @@
 		D97A238229D1E1D800B8AB0A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DCB29E19534009C2D02 /* ViewModel */,
-				B9BE4DC629E18E28009C2D02 /* Model */,
-				70A1F6BA29D76302002FDC29 /* Controller */,
+				D9B99E4129DF0F1A006ABE05 /* ViewModel */,
+				D9B99E3E29DF0EF6006ABE05 /* Builder */,
 				D97A238329D1E1D800B8AB0A /* View */,
 			);
 			path = Home;
@@ -347,7 +294,7 @@
 		D97A238329D1E1D800B8AB0A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */,
+				D97A238429D1E1D800B8AB0A /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,8 +319,6 @@
 		D97A238929D1E1D800B8AB0A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				70A1F6C429D81759002FDC29 /* ViewModel */,
-				70A1F6C129D8136A002FDC29 /* Controller */,
 				D97A238A29D1E1D800B8AB0A /* View */,
 			);
 			path = Settings;
@@ -383,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				D97A238B29D1E1D800B8AB0A /* SettingsCell.swift */,
+				D97A238C29D1E1D800B8AB0A /* SettingsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,10 +377,6 @@
 		D9A2C334299E70F400B8AEA5 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DB729E18B67009C2D02 /* NetworkLayer */,
-				706F9AFC29D36AF8007647F7 /* GoogleMapsService */,
-				D97A239B29D1E20900B8AB0A /* CoreMotionService */,
-				D97A239629D1E20900B8AB0A /* LocationService */,
 				7005AFAC29A7E60100ABEB66 /* Localizable */,
 				D9A2C33B299E736F00B8AEA5 /* Constants */,
 				D9A2C335299E712E00B8AEA5 /* Resources */,
@@ -446,7 +388,6 @@
 		D9A2C335299E712E00B8AEA5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D97A239829D1E20900B8AB0A /* Fonts */,
 				7019C646299531D500E9379E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -478,9 +419,25 @@
 			isa = PBXGroup;
 			children = (
 				7005AFB229AB3F0C00ABEB66 /* Typography */,
-				D9A2C33C299E739000B8AEA5 /* RSConstants.swift */,
+				D9A2C33C299E739000B8AEA5 /* OnboardingConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D9B99E3E29DF0EF6006ABE05 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				D9B99E3F29DF0F0B006ABE05 /* HomeBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		D9B99E4129DF0F1A006ABE05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9B99E4229DF0F30006ABE05 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EDB1CDC3485BDC061A01DAC2 /* Frameworks */ = {
@@ -617,28 +574,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A2C33D299E739000B8AEA5 /* RSConstants.swift in Sources */,
-				70A1F6B329D7426C002FDC29 /* UIImage.swift in Sources */,
-				706F9AFE29D36B0E007647F7 /* GoogleMapsService.swift in Sources */,
-				D97A23A229D1E22600B8AB0A /* UISegmentedControl.swift in Sources */,
+				D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */,
+				D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */,
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
+				D9B99E4329DF0F30006ABE05 /* HomeViewModel.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
-				70A1F6BE29D76359002FDC29 /* HomeViewController+LocationService.swift in Sources */,
-				70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */,
-				70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
 				B9BE4DCA29E191DA009C2D02 /* NetworkConstants.swift in Sources */,
 				D97A23A029D1E20900B8AB0A /* CoreMotionService.swift in Sources */,
 				7019C642299531D500E9379E /* OnBoardingViewController.swift in Sources */,
 				7019C63E299531D500E9379E /* AppDelegate.swift in Sources */,
-				70A1F6C329D8137E002FDC29 /* SettingViewController+Section.swift in Sources */,
 				D97A239429D1E1D800B8AB0A /* SettingsViewController.swift in Sources */,
 				D97A239D29D1E20900B8AB0A /* LocationService.swift in Sources */,
 				708E1A8B29981AC500164E9A /* OnBoardingViewController+Section.swift in Sources */,
 				D97A239029D1E1D800B8AB0A /* HomeViewController.swift in Sources */,
-				70A1F6C029D810A2002FDC29 /* UITableView.swift in Sources */,
-				70A1F6C629D81766002FDC29 /* SettingsCellViewModel.swift in Sources */,
-				B9BE4DBD29E18C04009C2D02 /* HTTPMethods.swift in Sources */,
+				D9B99E4029DF0F0B006ABE05 /* HomeBuilder.swift in Sources */,
 				700EF6CA299D19EF00101B63 /* UICollectionView.swift in Sources */,
 				7019C655299536AC00E9379E /* OnBoardingCollectionViewCell.swift in Sources */,
 				B9BE4DC829E18E33009C2D02 /* DangerZoneModel.swift in Sources */,
@@ -647,11 +597,8 @@
 				708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */,
 				7005AFA529A69ED400ABEB66 /* TypographyFonts.swift in Sources */,
 				D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */,
-				70A1F6C829D81908002FDC29 /* SettingVIewController+TableView.swift in Sources */,
 				D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */,
 				7005AFB529AB3F2500ABEB66 /* Typography.swift in Sources */,
-				70A1F6BC29D76319002FDC29 /* HomeViewController+CoreMotionService.swift in Sources */,
-				B9BE4DCD29E1953D009C2D02 /* HomeViewModel.swift in Sources */,
 				7005AFB729AB439000ABEB66 /* NSAttributedString.swift in Sources */,
 				708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */,
 				B9BE4DC029E18C92009C2D02 /* NetworkRequest.swift in Sources */,
@@ -807,23 +754,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 67V6V79892;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K24AZKRV3T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoadScan/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roadscan.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoadScan.kz.kz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -843,23 +790,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 67V6V79892;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K24AZKRV3T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoadScan/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.roadscan.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoadScan.kz.kz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

@@ -4,6 +4,7 @@ extension UIColor {
     //MARK - Onboarding
     static let onboardingWhiteBlue = UIColor(red: 1, green: 1, blue: 1, alpha: 0.35)
     
+    
     //MARK: - Main
     static let mainBlue = UIColor(red: 0.039, green: 0.306, blue: 0.906, alpha: 1)
     
@@ -16,7 +17,4 @@ extension UIColor {
     static let textGray = UIColor(red: 0.459, green: 0.459, blue: 0.459, alpha: 1)
     static let textWhite = UIColor(red: 0.992, green: 0.992, blue: 0.996, alpha: 1)
     static let textBlack = UIColor(red: 0.204, green: 0.204, blue: 0.204, alpha: 1)
-    
-    //MARK: - SegmentedControl
-    static let SCShadowColor = UIColor(red: 0, green: 0, blue: 0, alpha:0.15)
 }
