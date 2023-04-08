@@ -1,5 +1,12 @@
 import Alamofire
 
+struct DangerZoneModel {
+    var city: String
+    var latitude: Double?
+    var longitude: Double?
+    var danger_level: Double?
+}
+
 protocol NetworkServiceProtocol {
     func postDangerZone(param: DangerZoneModel, comp: @escaping((DangerZoneModel)-> ()))
 }
