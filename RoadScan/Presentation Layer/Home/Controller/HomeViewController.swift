@@ -7,6 +7,7 @@ final class HomeViewController: UIViewController {
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
     private let googleMapsService = GoogleMapsService()
+    private let viewModel = HomeViewModel()
     
     //MARK: - UI
     private lazy var segmentedControlView = SegmentedControlView()
@@ -41,6 +42,7 @@ final class HomeViewController: UIViewController {
     override func loadView() {
         super.loadView()
         configureLocationService()
+        binding()
     }
     
     override func viewDidLoad() {
@@ -116,5 +118,16 @@ final class HomeViewController: UIViewController {
     
     private func configureLocationService() {
         locationService.delegate = self
+    }
+    
+    private func binding() {
+        viewModel.delegate = self
+    }
+}
+
+// MARK: - Fetch
+extension HomeViewController: DidUpdateDangerPointsDelegate {
+    func didUpdateDangerPoints() {
+        print(viewModel.dangerPoints)
     }
 }
