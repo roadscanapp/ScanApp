@@ -27,8 +27,7 @@
 		70A1F6B329D7426C002FDC29 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B229D7426C002FDC29 /* UIImage.swift */; };
 		70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */; };
 		70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B829D747EF002FDC29 /* UIView.swift */; };
-		70A1F6BC29D76319002FDC29 /* HomeViewController+CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */; };
-		70A1F6BE29D76359002FDC29 /* HomeViewController+LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */; };
+		70A1F6BC29D76319002FDC29 /* HomeViewController+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */; };
 		70A1F6C029D810A2002FDC29 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BF29D810A2002FDC29 /* UITableView.swift */; };
 		70A1F6C329D8137E002FDC29 /* SettingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */; };
 		70A1F6C629D81766002FDC29 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */; };
@@ -73,8 +72,7 @@
 		70A1F6B229D7426C002FDC29 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		70A1F6B829D747EF002FDC29 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CoreMotionService.swift"; sourceTree = "<group>"; };
-		70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+LocationService.swift"; sourceTree = "<group>"; };
+		70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extenstion.swift"; sourceTree = "<group>"; };
 		70A1F6BF29D810A2002FDC29 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingViewController+Section.swift"; sourceTree = "<group>"; };
 		70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
@@ -235,8 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				D97A238429D1E1D800B8AB0A /* HomeViewController.swift */,
-				70A1F6BB29D76319002FDC29 /* HomeViewController+CoreMotionService.swift */,
-				70A1F6BD29D76359002FDC29 /* HomeViewController+LocationService.swift */,
+				70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -553,7 +550,6 @@
 				D97A23A229D1E22600B8AB0A /* UISegmentedControl.swift in Sources */,
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
-				70A1F6BE29D76359002FDC29 /* HomeViewController+LocationService.swift in Sources */,
 				70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */,
 				70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
@@ -576,7 +572,7 @@
 				70A1F6C829D81908002FDC29 /* SettingVIewController+TableView.swift in Sources */,
 				D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */,
 				7005AFB529AB3F2500ABEB66 /* Typography.swift in Sources */,
-				70A1F6BC29D76319002FDC29 /* HomeViewController+CoreMotionService.swift in Sources */,
+				70A1F6BC29D76319002FDC29 /* HomeViewController+Extenstion.swift in Sources */,
 				7005AFB729AB439000ABEB66 /* NSAttributedString.swift in Sources */,
 				708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */,
 				7005AFBB29AC92A600ABEB66 /* RSAssets.swift in Sources */,
