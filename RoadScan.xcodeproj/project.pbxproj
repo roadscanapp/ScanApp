@@ -23,6 +23,14 @@
 		708E1A8B29981AC500164E9A /* OnBoardingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8A29981AC500164E9A /* OnBoardingViewController+Section.swift */; };
 		708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */; };
 		708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */; };
+		70A1F6B329D7426C002FDC29 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B229D7426C002FDC29 /* UIImage.swift */; };
+		70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */; };
+		70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6B829D747EF002FDC29 /* UIView.swift */; };
+		70A1F6BC29D76319002FDC29 /* HomeViewController+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */; };
+		70A1F6C029D810A2002FDC29 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6BF29D810A2002FDC29 /* UITableView.swift */; };
+		70A1F6C329D8137E002FDC29 /* SettingViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */; };
+		70A1F6C629D81766002FDC29 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */; };
+		70A1F6C829D81908002FDC29 /* SettingVIewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1F6C729D81908002FDC29 /* SettingVIewController+TableView.swift */; };
 		9488BE6C643A1EF13626E9BB /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
 		B9BE4DC529E18D5D009C2D02 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B9BE4DC429E18D5D009C2D02 /* Alamofire */; };
 		B9BE4DDC29E1A0EA009C2D02 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD629E1A0EA009C2D02 /* NetworkRequest.swift */; };
@@ -67,6 +75,14 @@
 		708E1A8A29981AC500164E9A /* OnBoardingViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+Section.swift"; sourceTree = "<group>"; };
 		708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		70A1F6B229D7426C002FDC29 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		70A1F6B629D745B4002FDC29 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		70A1F6B829D747EF002FDC29 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extenstion.swift"; sourceTree = "<group>"; };
+		70A1F6BF29D810A2002FDC29 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		70A1F6C229D8137E002FDC29 /* SettingViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingViewController+Section.swift"; sourceTree = "<group>"; };
+		70A1F6C529D81766002FDC29 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		70A1F6C729D81908002FDC29 /* SettingVIewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingVIewController+TableView.swift"; sourceTree = "<group>"; };
 		77297612BDF42821D724C162 /* Pods-RoadScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.debug.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.debug.xcconfig"; sourceTree = "<group>"; };
 		B9BE4DB929E18B84009C2D02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B9BE4DBF29E18C92009C2D02 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
@@ -227,6 +243,8 @@
 		B017D85B023F1876A9DD90C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				D97A238429D1E1D800B8AB0A /* HomeViewController.swift */,
+				70A1F6BB29D76319002FDC29 /* HomeViewController+Extenstion.swift */,
 				77297612BDF42821D724C162 /* Pods-RoadScan.debug.xcconfig */,
 				E6F2D8671C48D8B681BD9D50 /* Pods-RoadScan.release.xcconfig */,
 			);
@@ -589,6 +607,8 @@
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
 				D9B99E4329DF0F30006ABE05 /* HomeBuilder.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
+				70A1F6B729D745B4002FDC29 /* SegmentedControlView.swift in Sources */,
+				70A1F6B929D747EF002FDC29 /* UIView.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
 				D97A23A029D1E20900B8AB0A /* CoreMotionService.swift in Sources */,
 				7019C642299531D500E9379E /* OnBoardingViewController.swift in Sources */,
@@ -608,6 +628,7 @@
 				D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */,
 				D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */,
 				7005AFB529AB3F2500ABEB66 /* Typography.swift in Sources */,
+				70A1F6BC29D76319002FDC29 /* HomeViewController+Extenstion.swift in Sources */,
 				7005AFB729AB439000ABEB66 /* NSAttributedString.swift in Sources */,
 				B9BE4DDF29E1A0EA009C2D02 /* NetworkService.swift in Sources */,
 				708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */,
