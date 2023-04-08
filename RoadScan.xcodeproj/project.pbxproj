@@ -24,13 +24,11 @@
 		708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A8C29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift */; };
 		708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */; };
 		8A4A2775E3F4D4E9E84E9B92 /* Pods_RoadScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */; };
-		B9BE4DBA29E18B84009C2D02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DB929E18B84009C2D02 /* NetworkService.swift */; };
-		B9BE4DBD29E18C04009C2D02 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DBC29E18C04009C2D02 /* HTTPMethods.swift */; };
-		B9BE4DC029E18C92009C2D02 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DBF29E18C92009C2D02 /* NetworkRequest.swift */; };
 		B9BE4DC529E18D5D009C2D02 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B9BE4DC429E18D5D009C2D02 /* Alamofire */; };
-		B9BE4DC829E18E33009C2D02 /* DangerZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DC729E18E33009C2D02 /* DangerZoneModel.swift */; };
-		B9BE4DCA29E191DA009C2D02 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DC929E191DA009C2D02 /* NetworkConstants.swift */; };
-		B9BE4DCD29E1953D009C2D02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DCC29E1953D009C2D02 /* HomeViewModel.swift */; };
+		B9BE4DDC29E1A0EA009C2D02 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD629E1A0EA009C2D02 /* NetworkRequest.swift */; };
+		B9BE4DDD29E1A0EA009C2D02 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD729E1A0EA009C2D02 /* NetworkConstants.swift */; };
+		B9BE4DDE29E1A0EA009C2D02 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DD929E1A0EA009C2D02 /* HTTPMethods.swift */; };
+		B9BE4DDF29E1A0EA009C2D02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE4DDB29E1A0EA009C2D02 /* NetworkService.swift */; };
 		D97A239029D1E1D800B8AB0A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238429D1E1D800B8AB0A /* HomeViewController.swift */; };
 		D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */; };
 		D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A238829D1E1D800B8AB0A /* EndFeedbackViewController.swift */; };
@@ -70,11 +68,13 @@
 		708E1A9229981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		77297612BDF42821D724C162 /* Pods-RoadScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadScan.debug.xcconfig"; path = "Target Support Files/Pods-RoadScan/Pods-RoadScan.debug.xcconfig"; sourceTree = "<group>"; };
 		B9BE4DB929E18B84009C2D02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		B9BE4DBC29E18C04009C2D02 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		B9BE4DBF29E18C92009C2D02 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		B9BE4DC729E18E33009C2D02 /* DangerZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerZoneModel.swift; sourceTree = "<group>"; };
 		B9BE4DC929E191DA009C2D02 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
-		B9BE4DCC29E1953D009C2D02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B9BE4DD629E1A0EA009C2D02 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B9BE4DD729E1A0EA009C2D02 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		B9BE4DD929E1A0EA009C2D02 /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		B9BE4DDB29E1A0EA009C2D02 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D88533AC902EACF0BB56E666 /* Pods_RoadScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97A238429D1E1D800B8AB0A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D97A238729D1E1D800B8AB0A /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +164,7 @@
 				7019C63B299531D500E9379E /* Products */,
 				B017D85B023F1876A9DD90C9 /* Pods */,
 				EDB1CDC3485BDC061A01DAC2 /* Frameworks */,
+				B9BE4DCF29E19EFA009C2D02 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,55 +231,50 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B9BE4DB729E18B67009C2D02 /* NetworkLayer */ = {
+		B9BE4DCF29E19EFA009C2D02 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DBE29E18C34009C2D02 /* Request  */,
-				B9BE4DBB29E18BF7009C2D02 /* HTTPMethods */,
-				B9BE4DB829E18B6C009C2D02 /* NetworkService */,
+				B9BE4DC929E191DA009C2D02 /* NetworkConstants.swift */,
+				B9BE4DC729E18E33009C2D02 /* DangerZoneModel.swift */,
+				B9BE4DB929E18B84009C2D02 /* NetworkService.swift */,
+				B9BE4DBF29E18C92009C2D02 /* NetworkRequest.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B9BE4DD429E1A0EA009C2D02 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE4DD529E1A0EA009C2D02 /* Request  */,
+				B9BE4DD829E1A0EA009C2D02 /* HTTPMethods */,
+				B9BE4DDA29E1A0EA009C2D02 /* NetworkService */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
-		B9BE4DB829E18B6C009C2D02 /* NetworkService */ = {
+		B9BE4DD529E1A0EA009C2D02 /* Request  */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DB929E18B84009C2D02 /* NetworkService.swift */,
-			);
-			path = NetworkService;
-			sourceTree = "<group>";
-		};
-		B9BE4DBB29E18BF7009C2D02 /* HTTPMethods */ = {
-			isa = PBXGroup;
-			children = (
-				B9BE4DBC29E18C04009C2D02 /* HTTPMethods.swift */,
-			);
-			path = HTTPMethods;
-			sourceTree = "<group>";
-		};
-		B9BE4DBE29E18C34009C2D02 /* Request  */ = {
-			isa = PBXGroup;
-			children = (
-				B9BE4DBF29E18C92009C2D02 /* NetworkRequest.swift */,
-				B9BE4DC929E191DA009C2D02 /* NetworkConstants.swift */,
+				B9BE4DD629E1A0EA009C2D02 /* NetworkRequest.swift */,
+				B9BE4DD729E1A0EA009C2D02 /* NetworkConstants.swift */,
 			);
 			path = "Request ";
 			sourceTree = "<group>";
 		};
-		B9BE4DC629E18E28009C2D02 /* Model */ = {
+		B9BE4DD829E1A0EA009C2D02 /* HTTPMethods */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DC729E18E33009C2D02 /* DangerZoneModel.swift */,
+				B9BE4DD929E1A0EA009C2D02 /* HTTPMethods.swift */,
 			);
-			path = Model;
+			path = HTTPMethods;
 			sourceTree = "<group>";
 		};
-		B9BE4DCB29E19534009C2D02 /* ViewModel */ = {
+		B9BE4DDA29E1A0EA009C2D02 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE4DCC29E1953D009C2D02 /* HomeViewModel.swift */,
+				B9BE4DDB29E1A0EA009C2D02 /* NetworkService.swift */,
 			);
-			path = ViewModel;
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		D97A238229D1E1D800B8AB0A /* Home */ = {
@@ -377,6 +373,7 @@
 		D9A2C334299E70F400B8AEA5 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				B9BE4DD429E1A0EA009C2D02 /* NetworkLayer */,
 				7005AFAC29A7E60100ABEB66 /* Localizable */,
 				D9A2C33B299E736F00B8AEA5 /* Constants */,
 				D9A2C335299E712E00B8AEA5 /* Resources */,
@@ -574,13 +571,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BE4DDD29E1A0EA009C2D02 /* NetworkConstants.swift in Sources */,
+				B9BE4DDC29E1A0EA009C2D02 /* NetworkRequest.swift in Sources */,
 				D9A2C33D299E739000B8AEA5 /* OnboardingConstants.swift in Sources */,
 				D97A23A229D1E22600B8AB0A /* SegmentedControlExtension.swift in Sources */,
 				7005AFA929A7E5A300ABEB66 /* String.swift in Sources */,
 				D9B99E4329DF0F30006ABE05 /* HomeViewModel.swift in Sources */,
 				D97A239529D1E1D800B8AB0A /* MainTabBarController.swift in Sources */,
 				D97A239329D1E1D800B8AB0A /* SettingsCell.swift in Sources */,
-				B9BE4DCA29E191DA009C2D02 /* NetworkConstants.swift in Sources */,
 				D97A23A029D1E20900B8AB0A /* CoreMotionService.swift in Sources */,
 				7019C642299531D500E9379E /* OnBoardingViewController.swift in Sources */,
 				7019C63E299531D500E9379E /* AppDelegate.swift in Sources */,
@@ -591,17 +589,16 @@
 				D9B99E4029DF0F0B006ABE05 /* HomeBuilder.swift in Sources */,
 				700EF6CA299D19EF00101B63 /* UICollectionView.swift in Sources */,
 				7019C655299536AC00E9379E /* OnBoardingCollectionViewCell.swift in Sources */,
-				B9BE4DC829E18E33009C2D02 /* DangerZoneModel.swift in Sources */,
-				B9BE4DBA29E18B84009C2D02 /* NetworkService.swift in Sources */,
 				D9A2C33A299E728B00B8AEA5 /* UIColor.swift in Sources */,
 				708E1A9329981E0500164E9A /* OnBoardingCollectionViewCellViewModel.swift in Sources */,
+				B9BE4DDE29E1A0EA009C2D02 /* HTTPMethods.swift in Sources */,
 				7005AFA529A69ED400ABEB66 /* TypographyFonts.swift in Sources */,
 				D97A239229D1E1D800B8AB0A /* EndFeedbackViewController.swift in Sources */,
 				D97A239129D1E1D800B8AB0A /* FeedbackViewController.swift in Sources */,
 				7005AFB529AB3F2500ABEB66 /* Typography.swift in Sources */,
 				7005AFB729AB439000ABEB66 /* NSAttributedString.swift in Sources */,
+				B9BE4DDF29E1A0EA009C2D02 /* NetworkService.swift in Sources */,
 				708E1A8D29981CEF00164E9A /* OnBoardingViewController+CollectionView.swift in Sources */,
-				B9BE4DC029E18C92009C2D02 /* NetworkRequest.swift in Sources */,
 				7005AFBB29AC92A600ABEB66 /* RSAssets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
