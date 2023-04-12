@@ -10,4 +10,7 @@ struct OnboardingConstants {
 
     //MARK: - UserDefaults
     public static let onboardingDone: String = "isOnboardingDone"
+    
+    //MARK: - Unavailable
+    public static let unavailable: String = "unavailable".localized()
 }
