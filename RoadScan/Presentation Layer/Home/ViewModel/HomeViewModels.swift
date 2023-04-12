@@ -1,10 +1,3 @@
-//
-//  HomeViewModel.swift
-//  RoadScan
-//
-//  Created by Tanirbergen Kaldibai on 08.04.2023.
-//
-
 import Foundation
 
 protocol HomeViewModelInput {

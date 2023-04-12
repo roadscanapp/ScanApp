@@ -4,10 +4,11 @@ import SnapKit
 import CoreMotion
 
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, AlertProtocol {
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
     private let googleMapsService = GoogleMapsService()
+    private let locationManager = CLLocationManager()
 
     
     var mapView = GMSMapView()
@@ -63,6 +64,7 @@ final class HomeViewController: UIViewController {
     override func loadView() {
         super.loadView()
         locationService.delegate = self
+        locationService.delegateAlert = self
     }
     
     
@@ -147,10 +149,21 @@ final class HomeViewController: UIViewController {
     
     // создать extetion для view.addArangedSubviews []
     private func initialize() {
-        view.addSubview(viewToSC)
-        view.addSubview(plusZoom)
-        view.addSubview(minusZoom)
-        view.addSubview(myLocation)
+        [viewToSC, plusZoom, minusZoom, myLocation].forEach {
+            view.addSubview($0)
+        }
+    }
+    
+    func grantPermission() {
+        let alert = UIAlertController(title: "Доступ к местоположению запрещен", message: "Пожалуйста перейдите в настройки своего телефона, чтобы предоставить разрешение на доступ к вашему местоположению", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        { (action) in
+            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.startUpdatingLocation()
+        }
+        
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
     @objc func showMyLocation() {
