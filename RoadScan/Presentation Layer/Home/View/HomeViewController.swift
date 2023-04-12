@@ -7,9 +7,8 @@ import CoreMotion
 final class HomeViewController: UIViewController {
     private let locationService = LocationService()
     private let coreMotionService = CoreMotionService()
-    private let motionManager = CMMotionManager()
-    private let homeBuilder = HomeBuilder()
-    private let viewModel = HomeViewModel()
+    private let googleMapsService = GoogleMapsService()
+
     
     var mapView = GMSMapView()
     
@@ -20,6 +19,7 @@ final class HomeViewController: UIViewController {
     private lazy var plusZoom: UIButton = {
         let plusZoom = UIButton()
         plusZoom.setBackgroundImage(UIImage(named: "Plus"), for: .normal)
+        plusZoom.addTarget(self, action: #selector(onTapPlus), for: .touchUpInside)
         
         return plusZoom
     }()
@@ -27,7 +27,7 @@ final class HomeViewController: UIViewController {
     private lazy var minusZoom: UIButton = {
         let minusZoom = UIButton()
         minusZoom.setBackgroundImage(UIImage(named: "Minus"), for: .normal)
-        
+        minusZoom.addTarget(self, action: #selector(onTapMinus), for: .touchUpInside)
         return minusZoom
     }()
     
@@ -62,7 +62,6 @@ final class HomeViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        binding()
         locationService.delegate = self
     }
     
@@ -82,7 +81,6 @@ final class HomeViewController: UIViewController {
         self.view.addSubview(mapView)
         setup()
         coreMotionService.speedDetecting()
-        fetchDangerList()
     }
     
     private func setup() {
@@ -112,7 +110,8 @@ final class HomeViewController: UIViewController {
     
     // нужно удалить метод или обьекти если не юзается
     private func setUpGoogleMaps(){
-        
+        mapView = googleMapsService.setupMapView(view: view)
+        view.addSubview(mapView)
     }
     // constraint не должны быть много чем 54
     private func makeConstraints() {
@@ -156,14 +155,35 @@ final class HomeViewController: UIViewController {
     
     @objc func showMyLocation() {
         print("my location")
+        googleMapsService.getMyCameraPosition(mapView: mapView)
+    }
+    
+    @objc func onTapPlus() {
+        googleMapsService.getZoomInValue(mapView: mapView)
+    }
+    
+    @objc func onTapMinus() {
+        googleMapsService.getZoomOutValue(mapView: mapView)
     }
 }
 
-extension HomeViewController: CoreMotionServiceDelegate {
+// MARK: - LocationService Delegate
+extension HomeViewController: CoreMotionServiceDelegate, LocationServiceProtocol  {
+    func getCurrentLocation(with location: CurrentLocationModel) {
+        let camera = GMSCameraPosition.camera(withLatitude: location.lat,
+                                              longitude:   location.lon,
+                                              zoom:         15.0)
+        
+        mapView.animate(to: camera)
+    }
+    
     func getDetectableSpeedState(state: DetectableSpeed, rate: Double) {
         if state == .carIsDriving {
-            locationService.requestLocation(rate: rate)
+            print("тут кочка")
+        } else {
+            print("тут ne кочка")
         }
+      
     }
     
     func getCoordinateMotionDevice(with data: CoreMotionViewModel) {
@@ -173,33 +193,3 @@ extension HomeViewController: CoreMotionServiceDelegate {
     }
 }
 
-// MARK: - LocationService Delegate
-extension HomeViewController: LocationServiceProtocol {
-    func getCurrentLocation(with location: CurrentLocationModel) {
-        print("----------->", location.lat)
-        //
-        homeBuilder.addPinCoordinate(lat: location.lat, lon: location.lon, mapview: mapView)
-        let camera = GMSCameraPosition.camera(withLatitude: location.lat,
-                                              longitude:   location.lon,
-                                              zoom:         15.0)
-        
-        mapView.animate(to: camera)
-    }
-}
-
-extension HomeViewController {
-    func binding() {
-        viewModel.delegate = self
-    }
-    
-    func fetchDangerList() {
-        viewModel.fetchDangerList(detail: .init(city: "Almaty", latitude: 123213, longitude: 123213, danger_level: "h"))
-    }
-}
-
-
-extension HomeViewController: OnUpdateDangerList {
-    func didUpdateDangerList() {
-        print("------------------------------>", viewModel.dangerList!)
-    }
-}
